@@ -1,0 +1,1 @@
+cmd_/home/minh/PROJECT/cal.ko := ld -r -m elf_x86_64  -z max-page-size=0x200000 -z noexecstack   --build-id  -T ./scripts/module-common.lds -o /home/minh/PROJECT/cal.ko /home/minh/PROJECT/cal.o /home/minh/PROJECT/cal.mod.o;  true
