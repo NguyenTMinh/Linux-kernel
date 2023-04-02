@@ -36,9 +36,9 @@ if [ "$command" = "create" ]; then
     echo "Ban co chac la ban muon thuc hien thao tac nay khong?" 
     read confirmation 
     if [ "$confirmation" = 'Y' ]; then 
-        echo "$min $hour $day $month $dow $order" >> "input.txt" 
-        crontab -l -u "$LOGNAME" | cat - "input.txt" | crontab -u "$LOGNAME" - 
-        rm -f "input.txt" 
+        echo "$min $hour $day $month $dow $order" >> "input1.txt" 
+        crontab -l -u "$LOGNAME" | cat - "input1.txt" | crontab -u "$LOGNAME" - 
+        rm -f "input1.txt" 
     else 
         echo "Aborted\n" 
         exit 1

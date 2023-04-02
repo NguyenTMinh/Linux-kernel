@@ -7,8 +7,6 @@ then
     echo 'Chua nhap chuc nang' 
 fi 
 
-E_NOTROOT=87
-
 if [ $command = "install" ] 
 then 
     if [ `whoami` != "root" ] 
